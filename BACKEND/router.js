@@ -49,7 +49,7 @@ router.post('/register', cors(), async (req, res) => {
     }
 });
 
-router.post('/login', cors(), (req, res) => {
+router.post('/login', (req, res) => {
     const user = {
         username: req.body.username,
         password: req.body.password,
